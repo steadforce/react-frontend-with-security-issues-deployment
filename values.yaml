@@ -10,3 +10,14 @@ app:
   backendUrl: http://dotnetbackend.dotnetbackend.svc.cluster.local:80
   containerPort: 80
   replicas: 1
+
+global:
+  acme:
+    domain: steadops.local.steadforce.com
+  istio:
+    ingressGateway:
+      namespace: istio-ingress
+  subDomain: react-frontend-with-security-issues
+forecastle:
+  group: steadforce-applications
+  icon_url: https://react.dev/images/brand/wordmark_dark.svg
