@@ -1,0 +1,12 @@
+image:
+  repository: steadforce/apps/react-frontend-with-security-issues
+  tag: 0.1.1
+  registry: ghcr.io
+
+service:
+  port: 80
+
+app:
+  backendUrl: http://dotnetbackend.dotnetbackend.svc.cluster.local:80
+  containerPort: 80
+  replicas: 1
